@@ -6,86 +6,110 @@
     <title>Document</title>
     <link rel="stylesheet" type="text/css" href="css/reg_style.css">
 </head>
+<!-- minlengt=5 maxlength=10
+required 필수항목
+checked 기본체크
+selected option에서 첫번째로 선택 
+autoforcus 상단에 포커스-->
 <body>
-    
-    
-    <form>
-        <fieldset>
-            <legend>필수입력정보</legend>
-            <table>
-                <caption>회원가입 필수 입력표</caption>
-                <tr>
-                    <td><label for="id">아이디</label></td>
-                    <td>
-                        <input type="text" id="id">
-                        <input type="button" value="중복확인" required>
-                    </td>
-                </tr>
-                <tr>
-                    <td><label for="pw">비밀번호</label></td>
-                    <td><input type="password" id="pw" required></td>
-                </tr>
-                <tr>
-                    <td><label for="name">이름</label></td>
-                    <td><input type="text" id="name"></td>
-                </tr>
-                <tr>
-                    <td><label for="tel">연락처</label></td>
-                    <td><input type="tel" id="tel"></td>
-                </tr>
-                <tr>
-                    <td><label for="email">이메일</label></td>
-                    <td><input type="email" id="email"></td>
-                </tr>
-                <tr>
-                    <td><label>전자우편신청</label></td>
-                    <td>
-                        <input type="radio" id="mail_yes" name="mail" value="1"><label for="mail_yes">예, 신청합니다</label>
-                        <input type="radio" id="mail_no" name="mail" value="2"><label for="mail_no">아니오, 신청하지 않습니다</label>
-                    </td>
-                </tr>
-            </table>
-        </fieldset> 
-        <fieldset>
-            <legend>선택입력정보</legend>
-            <table>
-                <caption>회원가입 선택입력 표</caption>
-                <tr>
-                    <td>프로필사진</td>
-                    <td><input type="text" name=""></td>
-                </tr>
-                <tr>
-                    <td>생년월일</td>
-                    <td><input type="date" name=""></td>
-                </tr>
-                <tr>
-                    <td>성별</td>
-                    <td><input type="text" name=""></td>
-                </tr>
-                <tr>
-                    <td>취미</td>
-                    <td><input type="text" name=""></td>
-                </tr>
-                <tr>
-                    <td>홈페이지</td>
-                    <td><input type="text" name=""></td>
-                </tr>
-                <tr>
-                    <td>직업</td>
-                    <td><input type="text" name=""></td>
-                </tr>
-                <tr>
-                    <td>좋아하는 색상</td>
-                    <td><input type="text" name=""></td>
-                </tr>
-                <tr>
-                    <td>자기소개</td>
-                    <td><input type="text" name=""></td>
-                </tr>
-            </table>
-        </fieldset>
-        <input type="button" value="취소">
-        <input type="button" value="회원가입">
-    </form>
+
+        <!-- form태그에서 전달방식 2가지
+        method="get" url에 전달되는 값이 보이고 간단한 문장을 전송시 사용
+        method="post" urlㅔㅇ 전달되는 값이 보이지 않고 파일전송등의 큰용량을 보낼때 사용 -->
+    <div id="join_wrap">
+        <form>
+            <fieldset>
+                <legend class="title">필수입력정보</legend>
+                <table>
+                    <tr>
+                        <td class="first"><label for="id">아이디</label></td>
+                        <td>
+                            <input class="textForm" type="text" id="id">
+                            <input class="btn_join btn_id" type="button" value="중복확인" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="first"><label for="pw">비밀번호</label></td>
+                        <td><input class="textForm" type="password" id="pw" required placeholder="비빌번호는 10개의 영문자와 숫자를 조합하여 작성하시오."></td>
+                    </tr>
+                    <tr>
+                        <td class="first"><label for="name">이름</label></td>
+                        <td><input class="textForm" type="text" id="name"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"><label for="tel">연락처</label></td>
+                        <td><input class="textForm" type="tel" id="tel"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"><label for="email">이메일</label></td>
+                        <td><input class="textForm" type="email" id="email" ></td>
+                    </tr>
+                    <tr>
+                        <td class="first"><label>전자우편신청</label></td>
+                        <td>
+                            <input type="radio" id="mail_yes" name="mail" value="1"><label for="mail_yes">예, 신청합니다</label>
+                            <input type="radio" id="mail_no" name="mail" value="2"><label for="mail_no">아니오, 신청하지 않습니다</label>
+                        </td>
+                    </tr>
+                </table>
+            </fieldset> 
+            <fieldset>
+                <legend class="title">선택입력정보</legend>
+                <table>
+                    <tr>
+                        <td class="first"><label for="f">프로필사진</label></td>
+                        <td><input id="f" type="file" name=""></td>
+                    </tr>
+                    <tr>
+                        <td class="first"><label for="d">생년월일</label></td>
+                        <td><input class="textForm" id="d" type="date" name=""></td>
+                    </tr>
+                    <tr>
+                        <td class="first">성별</td>
+                        <td>
+                            <input type="radio" name="gender" id="male"><label for="male">남</label>
+                            <input type="radio" name="gender" id="female"><label for="female">여</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="first">취미</td>
+                        <td>
+                            <input type="checkbox" id="m"><label for="m">등산</label>
+                            <input type="checkbox" id="r"><label for="r">독서</label>
+                            <input type="checkbox" id="mu"><label for="mu">음악감상</label>
+                            <input type="checkbox" id="mo"><label for="mo">영화감상</label>
+                            <input type="checkbox" id="co"><label for="co">요리</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="first"><label for="u">홈페이지</label></td>
+                        <td><input class="textForm" id="u" type="url" name="" value="https://"></td>
+                    </tr>
+                    <tr>
+                        <td class="first"><label for="job">직업</label></td>
+                        <td>
+                            <select class="textForm" id="job">
+                                <option>회사원</option>
+                                <option>공무원</option>
+                                <option selected>연구원</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="first"><label for="c">좋아하는 색상</label></td>
+                        <td><input id="c" type="color" name=""></td>
+                    </tr>
+                    <tr>
+                        <td class="first"><label for="t">자기소개</label></td>
+                        <td><textarea id ="t" rows="10" cols="50"></textarea></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <div class="btn">
+                <input class="btn_in " type="button" value="취소">
+                <input class="btn_in btn_join" type="button" value="회원가입">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
