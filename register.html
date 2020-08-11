@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/reg_style.css">
+</head>
+<body>
+    
+    
+    <form>
+        <fieldset>
+            <legend>필수입력정보</legend>
+            <table>
+                <caption>회원가입 필수 입력표</caption>
+                <tr>
+                    <td><label for="id">아이디</label></td>
+                    <td>
+                        <input type="text" id="id">
+                        <input type="button" value="중복확인" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="pw">비밀번호</label></td>
+                    <td><input type="password" id="pw" required></td>
+                </tr>
+                <tr>
+                    <td><label for="name">이름</label></td>
+                    <td><input type="text" id="name"></td>
+                </tr>
+                <tr>
+                    <td><label for="tel">연락처</label></td>
+                    <td><input type="tel" id="tel"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">이메일</label></td>
+                    <td><input type="email" id="email"></td>
+                </tr>
+                <tr>
+                    <td><label>전자우편신청</label></td>
+                    <td>
+                        <input type="radio" id="mail_yes" name="mail" value="1"><label for="mail_yes">예, 신청합니다</label>
+                        <input type="radio" id="mail_no" name="mail" value="2"><label for="mail_no">아니오, 신청하지 않습니다</label>
+                    </td>
+                </tr>
+            </table>
+        </fieldset> 
+        <fieldset>
+            <legend>선택입력정보</legend>
+            <table>
+                <caption>회원가입 선택입력 표</caption>
+                <tr>
+                    <td>프로필사진</td>
+                    <td><input type="text" name=""></td>
+                </tr>
+                <tr>
+                    <td>생년월일</td>
+                    <td><input type="date" name=""></td>
+                </tr>
+                <tr>
+                    <td>성별</td>
+                    <td><input type="text" name=""></td>
+                </tr>
+                <tr>
+                    <td>취미</td>
+                    <td><input type="text" name=""></td>
+                </tr>
+                <tr>
+                    <td>홈페이지</td>
+                    <td><input type="text" name=""></td>
+                </tr>
+                <tr>
+                    <td>직업</td>
+                    <td><input type="text" name=""></td>
+                </tr>
+                <tr>
+                    <td>좋아하는 색상</td>
+                    <td><input type="text" name=""></td>
+                </tr>
+                <tr>
+                    <td>자기소개</td>
+                    <td><input type="text" name=""></td>
+                </tr>
+            </table>
+        </fieldset>
+        <input type="button" value="취소">
+        <input type="button" value="회원가입">
+    </form>
+</body>
+</html>
