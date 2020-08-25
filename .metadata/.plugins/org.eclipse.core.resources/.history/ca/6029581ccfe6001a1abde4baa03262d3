@@ -1,0 +1,41 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<div class="main">
+	<form id="f" action="join" method="post"  onlick="return chk()">
+		<table>
+			<tr>
+				<td>아이디</td>
+				<td><input type="text" name="i_member"></td>
+			</tr>
+			<tr>
+				<td>비밀번호</td>
+				<td><input type="password" name="mid"></td>
+			</tr>
+			<tr>
+				<td>비밀번호 확인</td>
+				<td><input type="password" name="mpw"></td>
+			</tr>
+			<tr>
+				<td>이름</td>
+				<td><input type="text" name="nm"></td>
+			</tr>
+			<tr>
+				<td>성별</td>
+				<td>
+					여<input type="radio" name="sex" value="여">
+					남<input type="radio" name="sex" value="남">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<input type="submit" value="회원가입">
+				</td>
+			</tr>
+		</table>
+	</form>
+</div>
+<script>
+	function chk(){
+		
+	}
+</script>

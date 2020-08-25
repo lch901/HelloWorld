@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div class="main">
+		<form action="join" method="post">
+			<table>
+				<tr>
+					<td></td>
+					<td><input type="text" name=""></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="text" name=""></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="text" name=""></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="text" name=""></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td><input type="text" name=""></td>
+				</tr>
+				<tr>
+					<input type="text" name="">
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>
