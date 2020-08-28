@@ -1,0 +1,17 @@
+	
+	 <!-- <Context docBase="a20_8_24" path="/a20_8_24" reloadable="true" source="org.eclipse.jst.jee.server:a20_8_24"/></Host> -->
+	<Context docBase="a20_8_24" path="/a20_8_24" reloadable="true" source="org.eclipse.jst.jee.server:a20_8_24">
+	      <Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="system"/>
+      </Context>
+      
+      <Context docBase="beanPro" path="/beanPro" reloadable="true" source="org.eclipse.jst.jee.server:beanPro">
+      		<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxIdle="10" maxTotal="20" maxWaitMillis="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="system"/>
+      </Context>
+      </Host>
+      
+      
+      -----------------------
+      WEB-INF-S-QL-binPro.sql
+      -----------------------
+      
+      프로젝트명을 바꾸면 sever.xml의 Context내용도 변경됨.
