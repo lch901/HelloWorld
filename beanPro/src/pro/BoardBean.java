@@ -15,6 +15,9 @@ public class BoardBean {
 	private int b_ref;
 	private int b_step;
 	private int b_level;
+	private String b_fname;
+	private int b_fsize;
+	
 	
 	public int getB_id() {
 		return b_id;
@@ -64,7 +67,6 @@ public class BoardBean {
 	public void setB_hit(int b_hit) {
 		this.b_hit = b_hit;
 	}
-	
 	public String getB_ip() {
 		return b_ip;
 	}
@@ -89,6 +91,51 @@ public class BoardBean {
 	public void setB_level(int b_level) {
 		this.b_level = b_level;
 	}
-	
+	public String getB_fname() {
+		return b_fname;
+	}
+	public void setB_fname(String b_fname) {
+		this.b_fname = b_fname;
+	}
+	public int getB_fsize() {
+		return b_fsize;
+	}
+	public void setB_fsize(int b_fsize) {
+		this.b_fsize = b_fsize;
+	}
+
+
+
+
+
+	public static int pagesize=5;//한 페이지당 10개씩 출력
+	public static int pagecount=1;//페이지 개수 지정변수(50/pagesize)=5,pagecount=5
+	public static int pageNUM=1;//페이지 번호
+	public static String pageNumber(int limit) {
+		String str="";
+		int temp=(pageNUM-1)%limit;//시작 페이지 구하기
+		int startPage=pageNUM-temp;
+		
+		//[이전]링크 추가하기
+		if((startPage-limit)>0) {
+			str="<a href='list.jsp?pageNUM='"+(startPage-1)+"[이전]<a/>&nbsp;";
+		}
+		
+		//페이지 번호 나열하기
+		for(int i=startPage;i<(startPage+limit);i++) {
+			if(i==pageNUM) {
+				str+="["+i+"]&nbsp;";
+			}else {
+				str+="<a href='list.jsp?pageNUM="+i+"'>["+i+"]</a>&nbsp;";
+			}
+			if(i>=pagecount)break;
+		}
+		
+		if((startPage+limit)<=pagecount) {
+			str += "<a href='list.jsp?pageNUM=" +
+					(startPage+limit)+"'>[다음]</a>";
+		}
+		return str;
+	}
 	
 }

@@ -8,34 +8,17 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<jsp:useBean id="board" class="pro.BoardBean"></jsp:useBean>
+	<jsp:setProperty property="*" name="board"/>
 	<%
-		String b_name=request.getParameter("b_name");
-		String b_email=request.getParameter("b_email");
-		String b_title=request.getParameter("b_title");
-		String b_content=request.getParameter("b_content");
-		String b_pwd=request.getParameter("b_pwd");
-		System.out.println(b_name);
-		System.out.println(b_email);
-		System.out.println(b_title);
-		System.out.println(b_content);
-		System.out.println(b_pwd);
-		
 		BoardDBBean db=BoardDBBean.getInstance();
-		BoardBean board=new BoardBean();
-		board.setB_name(b_name);
-		board.setB_email(b_email);
-		board.setB_title(b_title);
-		board.setB_content(b_content);
-		board.setB_pwd(b_pwd);
-		
-		
 		
 		db.getConnection();
 		int re=db.editBoard(board);
 		if(re==0){
-			response.sendRedirect("edit.jsp");//비밀번호가 틀림. 
+			response.sendRedirect("edit.jsp?b_id="+board.getB_id());//비밀번호가 틀림. 
 		}else{
-			response.sendRedirect("list.jsp");
+			response.sendRedirect("view.jsp?b_id="+board.getB_id());
 		}
 		
 	%>

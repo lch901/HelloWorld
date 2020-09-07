@@ -1,7 +1,0 @@
-package dao;
-
-public class MemberDAO {
-	public void insertMember(){
-		
-	}
-}

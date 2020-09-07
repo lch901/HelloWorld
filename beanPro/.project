@@ -28,4 +28,16 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.wst.jsdt.core.jsNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>WebContent/board/mail_ok.jsp</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/kmove/source/WebContent/board/mail_ok.jsp</locationURI>
+		</link>
+		<link>
+			<name>WebContent/WEB-INF/lib/mail.jar</name>
+			<type>1</type>
+			<locationURI>PARENT-2-PROJECT_LOC/aa/javamail-1.4.4/mail.jar</locationURI>
+		</link>
+	</linkedResources>
 </projectDescription>

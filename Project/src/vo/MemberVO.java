@@ -5,9 +5,10 @@ public class MemberVO {
 	private String id;
 	private String pw;
 	private String nm;
-	private String sex;
 	private String tel;
+	private String email;
 	private String addr;
+	private String sex;
 	private String r_date;//생성 날짜
 	
 	public int getM_num() {
@@ -33,6 +34,13 @@ public class MemberVO {
 	}
 	public void setNm(String nm) {
 		this.nm = nm;
+	}
+	
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
 	}
 	public String getSex() {
 		return sex;

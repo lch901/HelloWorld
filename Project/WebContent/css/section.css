@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.main{
+	display:flex;
+	flex-direction: column;
+}
+.main>.top{
+	border-bottom:1px solid #dddddd;
+}
+.main>.top>.banner>.banner-img{
+	width:100%;
+}
+.main>.top>.product{
+	display:flex;
+	justify-content:space-between;
+}
+.main>.bottom{
+	display:flex;
+}
+
+

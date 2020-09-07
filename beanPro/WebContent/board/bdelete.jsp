@@ -7,19 +7,24 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<%
+		String b_id=request.getParameter("b_id");
+		/* System.out.println(b_id); */
+		
+	%>
 	<h1>글삭제</h1>
-	
 	<form action="bdeleteOk.jsp" method="get">
-		<table>
+		<input type="hidden" name="b_id" value="<%=b_id %>">
+		<table border="1">
 			<tr>
-				<th>암호를 입력하세요.</th>
+				<th colspan="2">암호를 입력하세요.</th>
 			</tr>
 			<tr>
 				<td>암호 </td>
 				<td><input type="password" name="b_pwd"></td>
 			</tr>
 			<tr>
-				<td>
+				<td colspan="2">
 					<input type="submit" value="글삭제">
 					<input type="reset" value="다시작성">
 					<input type="button" value="글목록" onclick="location.href='list.jsp'">

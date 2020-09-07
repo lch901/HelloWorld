@@ -1,0 +1,34 @@
+@charset "UTF-8";
+.category,  .category>li >.category-sub{
+	margin:0;
+	padding:0;
+	list-style-type:none;
+}
+
+.category{
+	display:flex;
+}
+.category a{
+	display:block;
+	color:#000000;
+	padding:10px 30px;
+	text-decoration:none;
+	text-align:center;
+}
+
+.category > li:hover .category-sub{
+	visibility: visible;
+}
+
+.category > li > .category-sub{
+	position:absolute;
+	background-color:#ffffff;
+	border:1px solid #dddddd;
+	visibility: hidden;
+}
+.category > li > ul > li{
+	border-bottom:1px solid #dddddd;
+}
+.category > li > ul > li > a:hover{
+	color:#cccccc;
+}

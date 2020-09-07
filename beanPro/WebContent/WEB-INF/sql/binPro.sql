@@ -25,10 +25,15 @@ create table board (
 	b_ip varchar2(15), /*9. 글쓴이의 아이피 주소 */
 	b_ref number(5), /*10. 글 그룹 번호 */
 	b_step number(5), /*11. 화면에 출력되는 글 위치*/
-	b_level number(5)
-); /*12. 답변 순위*/
+	b_level number(5)/*12. 답변 순위*/
+); 
 insert into board(b_id, b_name, b_email, b_title, b_content)
 values(1, '홍길동', 'hong@hanmail.net', '연습', '지금은 연습자료입니다.');
 delete from board where b_id>1;
+delete from board where b_id=10;
+
+alter table board add(b_fname varchar(50));
+alter table board add(b_fsize varchar(5));
+alter table board modify(b_fsize varchar(50));
 
 select * from board;

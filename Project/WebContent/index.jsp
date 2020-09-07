@@ -12,115 +12,72 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<style>
-html{
-	over-flow:scroll;
-}
-html,body,.container{
-	width:100%;
-	margin:0;
-	padding:0;
-}
-.container{
-	display:flex;
-	flex-direction:column;
-}
-.container > nav{
-	height:50px;
-	
-}
-.container > header{
-	height:200px;
-	display:flex;
-	justify-content:space-between;
-	
-}
-.container > section{
-	flex-grow:1;
-	display:flex;
-}
-.container > section > .left{
-	width:300px;
-}
-.container > section > .center{
-	flex-grow:6;
-	display:flex;
-	flex-direction: column;
-}
-.container > section > .center > .main{
-	width:
-	height:1000px;
-	border:1px solid black;
-	display:flex;
-	flex-direction:column;
-}
-.container > section > .center > .main > .main-top{
-	flex-grow:1;
-	display:flex;
-}
-.container > section > .center > .main > .main-top > .top-event{
-	width:100%;
-	height:800px;
-	
-}
-.container > section > .center > .main > .main-bottom{
-	flex-grow:1;
-	display:flex;
-	justify-content:space-between;
-}
-.container > section > .center > .main > .main-bottom > .bottom-item1{
-	margin:25px 0;
-	width:400px;
-	height:400px;
-	
-}
-.container > section > .center > .main > .main-bottom > .bottom-item2{
-	margin:25px 0;
-	width:400px;
-	height:400px;
-	
-}
-.container > section > .center > .main > .main-bottom > .bottom-item3{
-	margin:25px 0;
-	width:400px;
-	height:400px;
-	
-}
-.container > section > .right{
-	width:300px;
-	
-}
-.container > footer{
-	height:50px;
-	
-}
-</style>
+<link rel="stylesheet" type="text/css" href="./css/index.css?ver=101"/>
+<link rel="stylesheet" type="text/css" href="./css/menubar.css?ver=200"/>
+<link rel="stylesheet" type="text/css" href="./css/section.css?ver=300"/>
 </head>
 <body>
 	<div class="container">
-		<nav>
-			주도 행사 알림바 h50px
-		</nav>
 		<header>
-			<div>=</div>
-			<div>쇼핑몰 이름 및 로고</div>
-			<div>
-				<a href="login">login</a>
-				<a href="cart">cart(*)</a>
-				<a href="help">help</a>
+			<div class="event">
+				주도 행사 알림바
+			</div>
+			<div class="backend">
+				<a href="index.jsp">홈</a>
+				<a href="">즐겨찾기</a>
+				<a href="">바로가기</a>
+				<a href="login">로그인</a>
+				<a href="join">회원가입</a>
+				<a href="">마이쇼핑</a>
+				<a href="">장바구니</a>
+				<a href="">주문조회</a>
+				<a href="">고객센터 & 이벤트</a>
+				<form class="search" action="" method="get">
+					<input type="text" name="search">
+					<input type="submit" value="검색">
+				</form>
+			</div>
+			<div class="logo">
+				<img class="logo-img" src="./images/snoopy.jpg" alt="로고"/>
+				<h1>쇼핑몰 이름</h1>
+			</div>
+			<div class="ss">
+				<ul class="category">
+					<li><a href="">=</a></li>
+					<li><a href="">best</a></li>
+					<li><a href="">new</a></li>
+					<li>
+						<a href="">top</a>
+						<ul class="category-sub">
+							<li><a href="">긴팔</a></li>
+							<li><a href="">맨투맨/후드</a></li>
+							<li><a href="">니트</a></li>
+							<li><a href="">반팔</a></li>
+							<li><a href="">티셔츠</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="">pants</a>
+						<ul class="category-sub">
+							<li><a href="">menu</a></li>
+							<li><a href="">menu</a></li>
+							<li><a href="">menumenu</a></li>
+							<li><a href="">menumenu</a></li>
+							<li><a href="">menumenumenu</a></li>
+						</ul>
+					</li>
+					<li><a href="">shirt</a></li>
+					<li><a href="">outer</a></li>
+					<li><a href="">shoes</a></li>
+					<li><a href="">item</a></li>
+				</ul>
 			</div>
 		</header>
 		<section>
-			<div class="left">w300px</div>
-			<div class="center">
-				<div class="main">
-					<jsp:include page="<%=view %>"/>
-				</div>
-			</div>
-			<div class="right">w300px</div>
+			<jsp:include page="<%=view %>"/>
 		</section>
 		<footer>
-			h50px
+			footer
 		</footer>
 	</div>
 </body>
