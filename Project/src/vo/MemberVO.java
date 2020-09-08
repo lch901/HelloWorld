@@ -1,7 +1,7 @@
 package vo;
 
 public class MemberVO {
-	private int m_num;//테이블 번호
+	private int i_member;//테이블 번호
 	private String id;
 	private String pw;
 	private String nm;
@@ -11,11 +11,12 @@ public class MemberVO {
 	private String sex;
 	private String r_date;//생성 날짜
 	
-	public int getM_num() {
-		return m_num;
+	
+	public int getI_member() {
+		return i_member;
 	}
-	public void setM_num(int m_num) {
-		this.m_num = m_num;
+	public void setI_member(int i_member) {
+		this.i_member = i_member;
 	}
 	public String getId() {
 		return id;

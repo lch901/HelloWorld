@@ -86,6 +86,7 @@
 		if(f.addr.value===''){
 			alert('주소를 입력하시오.');
 			f.addr.focus();
+			return false;
 		}
 		return true;
 	}

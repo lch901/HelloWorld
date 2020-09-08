@@ -9,6 +9,8 @@ public class DAO {
 	public static Connection getCon() throws Exception{
 		Class.forName("oracle.jdbc.OracleDriver");
 		Connection con=DriverManager.getConnection("jdbc:oracle:thin:@//localhost:1521/xe","system","1234");
+//		DB
+//		Connection con=DriverManager.getConnection("jdbc:oracle:thin:@//ip번호:1521/xe","system","1234");
 //		System.out.println("DB");
 		return con;
 	}
