@@ -1,11 +1,16 @@
 package serv;
 
 import java.io.IOException;
+import java.util.List;
+
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import dao.ProductDAO;
+import vo.ProductVO;
 
 @WebServlet("/main")
 public class MainServ extends HttpServlet {
@@ -13,7 +18,10 @@ public class MainServ extends HttpServlet {
     public MainServ() { }
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		ProductDAO dao=ProductDAO.getInstance();
+		List<ProductVO> list = dao.mainList();
 		
+		request.setAttribute("list", list);
 		request.setAttribute("view", "main.jsp");
 		request.getRequestDispatcher("index.jsp").forward(request, response);
 	}

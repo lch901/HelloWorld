@@ -158,7 +158,7 @@
    
       
       
-      <Context docBase="Project" path="/Project" reloadable="true" source="org.eclipse.jst.jee.server:Project"/><Context docBase="a20_9_3_el" path="/a20_9_3_el" reloadable="true" source="org.eclipse.jst.jee.server:a20_9_3_el"/><Context docBase="a20_9_7_lib" path="/a20_9_7_lib" reloadable="true" source="org.eclipse.jst.jee.server:a20_9_7_lib"/></Host>
+      <Context docBase="Project" path="/Project" reloadable="true" source="org.eclipse.jst.jee.server:Project"/><Context docBase="a20_9_8" path="/a20_9_8" reloadable="true" source="org.eclipse.jst.jee.server:a20_9_8"/><Context docBase="Webjsp" path="/Webjsp" reloadable="true" source="org.eclipse.jst.jee.server:Webjsp"/></Host>
       
     </Engine>
   </Service>
