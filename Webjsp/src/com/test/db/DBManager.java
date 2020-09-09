@@ -8,7 +8,7 @@ import javax.naming.*;
 public class DBManager{
 
 	public DBManager() {}
-	
+	/*
 	public Connection getConnection(String div) throws Exception{
 	
 		Connection con = null;	//연결
@@ -19,16 +19,16 @@ public class DBManager{
 	    catch(Exception e)	{	throw e;  }
 	
 	   try 	{
-			con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe","userid","passwd"); 			    	
+			con = DriverManager.getConnection("jdbc:oracle:thin:@127.0.0.1:1521:xe","system","1234"); 			    	
 	   }
 	   catch(Exception e){	throw e;   }
 
 	   return con;
 	
 	}
-	
+	*/
 	//jdcp 기능 사용할시 ====================================
-	/*public Connection getConnection(String div) throws Exception{
+	public Connection getConnection(String div) throws Exception{
 		
 		Connection conn = null;
 		
@@ -46,6 +46,6 @@ public class DBManager{
  		
 		return conn;
 	}
-	*/
+	
 
 }
