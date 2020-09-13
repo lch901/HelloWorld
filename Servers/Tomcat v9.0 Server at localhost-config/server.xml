@@ -159,15 +159,14 @@
       
       
       <!-- <Context docBase="Project" path="/Project" reloadable="true" source="org.eclipse.jst.jee.server:Project"/><Context docBase="a20_9_8" path="/a20_9_8" reloadable="true" source="org.eclipse.jst.jee.server:a20_9_8"/><Context docBase="Webjsp" path="/Webjsp" reloadable="true" source="org.eclipse.jst.jee.server:Webjsp"/></Host> -->
-      <Context docBase="Project" path="/Project" reloadable="true" source="org.eclipse.jst.jee.server:Project"/><Context docBase="a20_9_8" path="/a20_9_8" reloadable="true" source="org.eclipse.jst.jee.server:a20_9_8"/>
+      <Context docBase="Project" path="/Project" reloadable="true" source="org.eclipse.jst.jee.server:Project"/>
       
-      <Context docBase="Webjsp" path="/Webjsp" reloadable="true" source="org.eclipse.jst.jee.server:Webjsp">
-      	<Resource name="jdbc/myoracle" auth="Container"
-			type="javax.sql.DataSource" driverClassName="oracle.jdbc.OracleDriver"
-			url="jdbc:oracle:thin:@127.0.0.1:1521:xe"
-			username="system" password="1234" maxActive="20" maxIdle="10"
-			maxWait="-1"/> 
-      </Context>
+      
+      
+      
+      	<Context docBase="Webjsp2" path="/Webjsp2" reloadable="true" source="org.eclipse.jst.jee.server:Webjsp2">
+      		<Resource auth="Container" driverClassName="oracle.jdbc.OracleDriver" maxActive="20" maxIdle="10" maxWait="-1" name="jdbc/myoracle" password="1234" type="javax.sql.DataSource" url="jdbc:oracle:thin:@127.0.0.1:1521:xe" username="system"/>
+      	</Context>
       
       </Host>
     </Engine>

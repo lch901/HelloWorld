@@ -17,10 +17,10 @@
 		</tr>
 		<tr>
 			<td>
-				<a href="findIdPw">아이디/비밀번호 찾기</a>
+				<a href="index.jsp?view=findIdPw.jsp">아이디/비밀번호 찾기</a>
 			</td>
 			<td></td>
-			<td><a href="join">회원가입</a></td>
+			<td><a href="index.jsp?view=join.jsp">회원가입</a></td>
 		</tr>
 	</table>
 </form>

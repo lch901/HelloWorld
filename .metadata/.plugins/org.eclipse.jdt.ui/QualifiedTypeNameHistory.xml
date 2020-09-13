@@ -9,4 +9,6 @@
 <fullyQualifiedTypeName name="javax.mail.PasswordAuthentication"/>
 <fullyQualifiedTypeName name="java.sql.Connection"/>
 <fullyQualifiedTypeName name="dao.MemberDAO"/>
+<fullyQualifiedTypeName name="oracle.jdbc.driver.Message"/>
+<fullyQualifiedTypeName name="javax.websocket.Session"/>
 </qualifiedTypeNameHistroy>

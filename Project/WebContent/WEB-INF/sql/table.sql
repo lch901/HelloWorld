@@ -1,5 +1,6 @@
 drop table member;
 drop table product;
+drop table product_import;
 
 create table member(
 	i_member number primary key,

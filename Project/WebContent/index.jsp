@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%
-	String view=(String)request.getAttribute("view");
+	String view=(String)request.getParameter("view");
 	
 	if(view == null){
 		view="main.jsp";
@@ -26,8 +26,8 @@
 				<a href="index.jsp">홈</a>
 				<a href="">즐겨찾기</a>
 				<a href="">바로가기</a>
-				<a href="login">로그인</a>
-				<a href="join">회원가입</a>
+				<a href="index.jsp?view=login.jsp">로그인</a>
+				<a href="index.jsp?view=join.jsp">회원가입</a>
 				<a href="">마이쇼핑</a>
 				<a href="">장바구니</a>
 				<a href="">주문조회</a>

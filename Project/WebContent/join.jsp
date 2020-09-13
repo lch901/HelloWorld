@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <br>
 <h1>회원가입</h1>
-<form id="f" action="join" method="post" onsubmit="return chk();">
+<form id="f" action="join_result.jsp" method="get" onsubmit="return chk();">
 	<table>
 		<tr>
 			<td>아이디</td>

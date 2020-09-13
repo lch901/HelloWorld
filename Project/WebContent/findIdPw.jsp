@@ -2,9 +2,12 @@
     pageEncoding="UTF-8"%>
 <br>
 <%
-	String type=(String)request.getAttribute("type");
+	String type=(String)request.getParameter("type");
+	if(type==null){
+		type="id";
+	}
 %>
-<form id="f" action="findIdPw" method="post" onsubmit="return chk()">
+<form id="f" action="findIdPw_result.jsp" method="get" onsubmit="return chk()">
 	<%if(type.equals("id")){ %>
 		<input type="button" value="아이디 찾기" onclick="type_id()">
 		<input type="button" value="비밀번호 찾기" onclick="type_pw()">
@@ -42,10 +45,10 @@
 	var f=document.getElementById('f');
 
 	function type_id(){
-		location.href='findIdPw?type=id';
+		location.href='index.jsp?view=findIdPw.jsp&type=id';
 	}
 	function type_pw(){
-		location.href='findIdPw?type=pw';
+		location.href='index.jsp?view=findIdPw.jsp&type=pw';
 	}
 	function chk(){
 		if(f.email.value===''){

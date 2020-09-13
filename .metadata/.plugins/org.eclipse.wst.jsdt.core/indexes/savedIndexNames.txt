@@ -1,17 +1,15 @@
 INDEX VERSION 1.4+C:\github\helloworldd\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-3947683423.index
 928461082.index
-2803192534.index
+3947683423.index
 3206247503.index
 449384428.index
 3376664043.index
 3929808399.index
 197994680.index
 252467327.index
+1066735282.index
 1357763413.index
-1540548101.index
-3658532093.index
-3107501752.index
+3755392261.index
 1615736300.index
-4037569797.index
 2998145010.index
+4037569797.index
