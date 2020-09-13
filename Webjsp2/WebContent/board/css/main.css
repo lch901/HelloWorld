@@ -1,0 +1,132 @@
+BODY, TABLE, TR, TD, INPUT, SELECT {
+	color: #666666;
+	font-family: "µ¸¿ò", "µ¸¿òÃ¼", "±¼¸²", "±¼¸²Ã¼";
+	font-size: 12px;
+	top:1; left:0; 
+}
+
+A:link, A:active, A:visited {	color: #666666;	text-decoration: none;	}
+A:hover						{	color: #000000;	text-decoration: none;	}
+
+
+.txt11 {
+	font-family: "µ¸¿ò", "µ¸¿òÃ¼", "±¼¸²", "±¼¸²Ã¼";
+	font-size: 11px;
+	color: #666666;
+}
+.txt9 {
+	font-family: "µ¸¿ò", "µ¸¿òÃ¼", "±¼¸²", "±¼¸²Ã¼";
+	font-size: 9px;
+	color: #666666;
+	letter-spacing: -3px;
+	position:relative; top:-1; left:0
+
+}
+.boardline {
+	font-family: "µ¸¿ò", "µ¸¿òÃ¼", "±¼¸²", "±¼¸²Ã¼";
+	font-size: 11px;
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #C1C1C1;
+	border-right-color: #C1C1C1;
+	border-bottom-color: #C1C1C1;
+	border-left-color: #C1C1C1;
+	padding-right: 3px;
+	padding-bottom: 2px;
+}
+.small {
+	font-family: "Verdana";
+	font-size: 7pt;
+	color: #666666;
+	text-decoration: none;
+}
+.smallbold {
+	font-family: "Verdana";
+	font-size: 7pt;
+	font-weight:bold;
+	color: #666666;
+	text-decoration: none;
+}
+#box {
+	width:520;
+	height: 250;
+	overflow: auto;
+	padding:10px;
+	border: 5px solid #efefef;
+}.bgwhite {
+	background-color: #FFFFFF;
+	padding-right: 10px;
+
+}
+.tbline {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #D9D9D9;
+	border-right-color: #D9D9D9;
+	border-bottom-color: #D9D9D9;
+	border-left-color: #D9D9D9;
+}
+.tbline2 {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 2px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #D9D9D9;
+	border-right-color: #D9D9D9;
+	border-bottom-color: #D9D9D9;
+	border-left-color: #D9D9D9;
+}
+.tbbg {
+	background-attachment: fixed;
+	background-image: url(../img/board_bar.gif);
+	background-repeat: repeat;
+}
+.tbline-color {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #E5C889;
+	border-right-color: #E5C889;
+	border-bottom-color: #E5C889;
+	border-left-color: #E5C889;
+}
+
+.tbline-color2 {
+	border-top-width: 0px;
+	border-right-width: 0px;
+	border-bottom-width: 1px;
+	border-left-width: 0px;
+	border-top-style: solid;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-top-color: #98BD84;
+	border-right-color: #98BD84;
+	border-bottom-color: #98BD84;
+	border-left-color: #98BD84;
+}
+
+body {
+style=overflow-x:hidden
+}

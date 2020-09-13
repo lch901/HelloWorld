@@ -1,0 +1,80 @@
+@charset "utf-8";
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family:"나눔고딕",sans-serif;
+    font-size:16px;
+    color:#333;
+}
+form > fieldset{
+    border:0;/*선 없애기*/
+}
+form > fieldset > legend{
+    padding:50px 0 20px;
+    font-size:2em;
+    font-weight:700;
+}
+form > fieldset > table{
+    border-top:1px solid black;
+    border-collapse:collapse;
+}
+form > fieldset >table > caption{
+    
+}
+form > fieldset > table > tbody >tr > .first,form > fieldset > table > tbody > tr > td{
+    padding:10px;
+    box-sizing:border-box;
+    border-bottom:1px solid #ddd;
+}
+form > fieldset > table > tbody >tr > .first{
+    width:180px;
+    text-align:left;
+}
+form > fieldset > table > tbody > tr > td{
+    width:640px;
+}
+
+form > fieldset > table> tbody > tr >.first{
+    background-color:rgb(240,240,240);
+    border-top:1px solid rgb(150,150,150);
+}
+form > fieldset > table > tbody > tr > td > .textForm{
+    width:420px;
+    height:40px;
+    border:1px solid #ddd;
+    border-radius:5px;
+    padding:0 10px;
+    box-sizing: border-box;
+}
+
+form > fieldset > table >tbody > tr > td > #t{
+    border:1px solid #ddd;
+}
+
+#join_wrap{
+    width:800px;
+    margin:0 auto;
+}
+.btn_join{
+    background-color:rgb(80,80,80);
+    color:rgb(255,255,255);
+}
+.btn_id{
+    width:80px;
+    height:40px;
+    border-radius:5px;
+    border:none;
+}
+.btn{
+    text-align:center;
+}
+.btn_in{
+    margin:5px;
+    width:100px;
+    height:50px;
+    border:none;
+}
+
+
